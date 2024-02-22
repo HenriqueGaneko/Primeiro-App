@@ -1,19 +1,12 @@
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
-import Logo from "../teste/assets/logo.png";
-import { Feather, FontAwesome5 } from '@expo/vector-icons';
+import Header from "./Src/components/Header";
 
 
 export default function App() {
   return (
     <View style={{flex: 1, marginVertical: 32, marginHorizontal: 16 }}>
-      <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
-        <Image style={{ height: 60, width: 200 }} source={Logo} />
-        <View style={{ flexDirection: "row", gap: 15 }}>
-          <Feather name="heart" size={24} color="black" />
-          <FontAwesome5 name="facebook-messenger" size={24} color="black" />
-        </View>
-      </View>
-
+   
+     <Header/>
       <ScrollView horizontal contentContainerStyle={{ gap: 8 }}
         style={{ flexDirection: "row"}}
        showsHorizontalScrollIndicator={false}
@@ -31,7 +24,7 @@ export default function App() {
         <Image
           style={{ height: 100, width: 100, borderRadius: 50 }}
           source={{
-            uri: "https://img.r7.com/images/ronaldinho-gaucho-24122018132413791?dimensions=660x660"
+            uri: "https://image-service.onefootball.com/transform?w=280&h=210&dpr=2&image=https%3A%2F%2Fwww.milannews24.com%2Fwp-content%2Fuploads%2F2023%2F06%2Fdimensioni-foto-26.jpg"
           }}
         />
         </TouchableOpacity>
@@ -47,7 +40,7 @@ export default function App() {
         <Image
           style={{ height: 100, width: 100, borderRadius: 50 }}
           source={{
-            uri: "https://pbs.twimg.com/media/FOZlD2cXIAU09dk.jpg:large"
+            uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg4MjgCmsvKeA0W-8sYVLA4hCsEcM1PjZT1Q&usqp=CAU"
           }}
         />
         </TouchableOpacity>
