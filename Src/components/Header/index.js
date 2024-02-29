@@ -5,9 +5,9 @@ import Logo from "../../assets/logo.png";
 
 export default function Header() {
   return (
-    <View styles={styles.header}>
+    <View style={styles.novo}>
       <Image style={{ height: 60, width: 200 }} source={Logo} />
-      <View styles={styles.icons}>
+      <View style={styles.icons}>
         <TouchableOpacity>
           <Feather name="heart" size={24} color="black" />
         </TouchableOpacity>
@@ -20,7 +20,7 @@ export default function Header() {
 }
 
 const styles = StyleSheet.create({
-  header: {
+  novo: {
     flexDirection: "row",
     justifyContent: "space-between",
   },

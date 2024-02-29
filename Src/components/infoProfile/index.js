@@ -23,7 +23,6 @@ export default function IntoProfile ({
                     <Text>Seguindo</Text>
                 </View>
             </View>
-          
         </View>
     );
 }
