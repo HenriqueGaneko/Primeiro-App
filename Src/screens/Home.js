@@ -1,14 +1,35 @@
-import {  View, StyleSheet } from "react-native";
+import {  View, StyleSheet, DrawerLayoutAndroidComponent,ScrollView } from "react-native";
 import Header from "../components/Header";
 import Stories from "../components/Stories";
+import Post from "../components/Posts";
+import imagem3 from "../assets/imagem3.jpg";
+import imagem4 from "../assets/imagem4.jpg";
 
 
 export default function Home() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
      <Header/>
       <Stories/>
-    </View>
+      <Post
+    profileImage={imagem3}
+    postImage={imagem4}
+    profileName="Ronaldo"
+    description="lorem loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    />
+      <Post
+    profileImage={imagem3}
+    postImage={imagem4}
+    profileName="Ronaldo"
+    description="lorem loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    />
+      <Post
+    profileImage={imagem3}
+    postImage={imagem4}
+    profileName="Ronaldo"
+    description="lorem loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"
+    />
+    </ScrollView>
   );
 }
 
